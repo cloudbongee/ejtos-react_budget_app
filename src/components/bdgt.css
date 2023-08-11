@@ -1,0 +1,19 @@
+
+.BudgetInputter {
+    width: 20vh;
+    border: none;
+    border-radius: 1vh;
+    background-color: #d5c7e9;
+}
+
+.BudgetInputter:focus{
+    outline: none;
+    background-color: #b9a7d3;
+    box-shadow: 1px 1px 5px #c093ff;
+}
+.BudgetInputter[type="number"]::-webkit-inner-spin-button,
+.BudgetInputter[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: slider-vertical;
+    margin: 0;
+    cursor: pointer;
+}

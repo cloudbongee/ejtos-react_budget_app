@@ -1,0 +1,14 @@
+
+#cur_on_selector{
+    margin-left: 2rem;
+    align-items: end;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(56, 56, 56);
+}
+
+#cost{
+    background-color: rgb(194, 194, 194);
+    margin-left: 0%;
+    padding: 0%
+}

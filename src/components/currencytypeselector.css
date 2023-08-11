@@ -1,0 +1,15 @@
+
+#currencytype {
+    color: white;
+    background-color: rgb(95, 228, 95);
+    border-radius: 0.75vh;
+    border: none;
+
+
+}
+.op:hover{
+    background-color: rgb(255, 255, 255);
+}
+.op{
+    color: black;
+}
