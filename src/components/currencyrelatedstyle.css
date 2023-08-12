@@ -2,6 +2,7 @@
 #cur_on_selector{
     margin-left: 2rem;
     align-items: end;
+    align-content: center;
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(56, 56, 56);

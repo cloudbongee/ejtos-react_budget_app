@@ -17,10 +17,10 @@ const CurrencyType = () => {
     }
 
     return(
-        <div className="alert alert-success">
+        <div className="alert alert-success" style={{backgroundColor: "#74D47B" }}>
             <span id="in-general">
                 <select id="currencytype" onChange={getCurrency}>
-                    <option className="op" disabled selected>Currency (£ Pound)</option>
+                    <option className="op" hidden value>Currency (£ Pound)</option>
                     <option className="op" value="$" name="D$">$ Dollar</option>
                     <option className="op" value="£" name="P£">£ Pound</option>
                     <option className="op" value="€" name="E€">€ Euro</option>
