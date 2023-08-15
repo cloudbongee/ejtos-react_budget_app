@@ -11,11 +11,11 @@
     box-shadow: none;
 }
 
-
 .BudgetInputter:focus{
     outline: none;
     background-color: #b9a7d3;
     box-shadow: 1px 1px 5px #c093ff;
+    border: none;
 }
 .BudgetInputter[type="number"]::-webkit-inner-spin-button,
 .BudgetInputter[type="number"]::-webkit-outer-spin-button {

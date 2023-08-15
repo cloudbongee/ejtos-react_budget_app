@@ -15,7 +15,7 @@ const Budget = () =>{
         let bnumber =  parseInt(event.target.value, 10)
 
         if(bnumber > 20000){
-            alert("Budget cannot exceed 20,000")
+            alert(`Budget cannot exceed ${ currency }20,000`)
             bnumber=0;
         }
         if(bnumber < totalExpenses){

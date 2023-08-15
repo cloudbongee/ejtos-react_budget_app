@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext';
 const AllocationForm = (props) => {
     const { dispatch,remaining,currency} = useContext(AppContext);
     const [name, setName] = useState('');
-    const [cost, setCost] = useState('');
+    const [cost, setCost] = useState("");
     const [action, setAction] = useState('');
     const submitEvent = () => {
             if(cost > remaining) {
@@ -29,6 +29,16 @@ const AllocationForm = (props) => {
                 });
             }
     };
+    const checkInput = (event) => {
+        let inp = event.target.value;
+        let acceptednumbers = /^[0-9]*$/; 
+        if (!inp.match(acceptednumbers)) { 
+            alert("invalid input"); 
+            setCost(""); 
+            event.target.value = ""; 
+        }
+      }
+    
     return (
         <div>
             <div className='row'>
@@ -56,10 +66,10 @@ const AllocationForm = (props) => {
                   <h4 id="cur_on_selector">{ currency }</h4>
                     <input
                         required='required'
-                        type='number'
+                        type='text'
                         id='cost'
                         value={cost}
-                        onChange={(event) => setCost(event.target.value)}>
+                        onChange={(event) => { checkInput(event); setCost(event.target.value)}}>
                         </input>
                     <button className="btn btn-primary" onClick={submitEvent}>
                         Save
@@ -67,6 +77,7 @@ const AllocationForm = (props) => {
                 </div>
                 </div>
         </div>
+
     );
 };
 export default AllocationForm;
